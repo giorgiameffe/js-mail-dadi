@@ -19,20 +19,28 @@ if (isDataValid) {
     console.log('User result', userNumbers);
     console.log('Computer result', computerNumbers);
 
+    // se il numero generato dal computer è maggiore 
+
     if (computerNumbers > userNumbers) {
         
-        console.log('Hai perso!')
-    
+        console.log('You lose!')
+
+    // se il numero scelto è maggiore 
+
     } else if (userNumbers > computerNumbers) {
 
-        console.log(`Hai vinto!`);
+        console.log(`You win!`);
+
+    // se i numeri sono uguali
     
     } else if (userNumbers === computerNumbers) {
         
-        console.log(`Pareggio!`);
+        console.log(`Draw!`);
     }
+
+// se il dato non è valido
 
 } else {
 
-    console.log('Il dato inserito non è valido');
+    console.log('This data is not valid');
 }
