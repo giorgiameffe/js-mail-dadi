@@ -14,3 +14,12 @@ const maxNumber = 6;
 
 const isNumberValid = userNumbers >= minNumber && userNumbers <= maxNumber;
 
+if (isNumberValid) {
+
+    console.log('User result', userNumbers);
+    console.log('Computer result', computerNumbers);
+
+} else {
+
+    console.log('Numero non valido');
+}
