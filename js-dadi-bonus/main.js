@@ -12,14 +12,27 @@ const maxNumber = 6;
 
 // condizione di validità 
 
-const isNumberValid = userNumbers >= minNumber && userNumbers <= maxNumber;
+const isDataValid = userNumbers >= minNumber && userNumbers <= maxNumber;
 
-if (isNumberValid) {
+if (isDataValid) {
 
     console.log('User result', userNumbers);
     console.log('Computer result', computerNumbers);
 
+    if (computerNumbers > userNumbers) {
+        
+        console.log('Hai perso!')
+    
+    } else if (userNumbers > computerNumbers) {
+
+        console.log(`Hai vinto!`);
+    
+    } else if (userNumbers === computerNumbers) {
+        
+        console.log(`Pareggio!`);
+    }
+
 } else {
 
-    console.log('Numero non valido');
+    console.log('Il dato inserito non è valido');
 }
