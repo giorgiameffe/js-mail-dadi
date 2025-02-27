@@ -13,13 +13,13 @@ Invece di generare il numero random per l'utente, chiedilo con un prompt!
 - creare un prompt dell'utente dove può scegliere un numero da 1 a 6
   - se il dato è valido 
     - proseguire con l'operazione
-       - se il numero generato è maggiore per il computer
-           - stampare il risultato "Il computer ha generato il numero x, hai perso!"
-        - altrimenti se il numero generato è maggiore per l'utente
-           - stampare il risultato "Hai generato il numero x, hai vinto!"
+       - se il numero generato dal computer è maggiore
+           - stampare il risultato "You lose!"
+        - altrimenti se il numero scelto dall'utente è maggiore
+           - stampare il risultato "You win!"
         - altrimenti se i numeri sono uguali 
-           - stampare il risultato "Pareggio!"
+           - stampare il risultato "Draw!"
   - altrimenti 
-     - stampare 'Il dato non è valido' 
+     - stampare 'This data is not valid' 
 
 
