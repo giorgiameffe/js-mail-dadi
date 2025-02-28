@@ -12,7 +12,9 @@ const maxNumber = 6;
 
 // condizione di validità 
 
-const isDataValid = userNumbers >= minNumber && userNumbers <= maxNumber;
+const isNumberValid = userNumbers >= minNumber && userNumbers <= maxNumber;
+const isNotText = userNumbers !== NaN;
+const isDataValid = isNumberValid && isNotText;
 
 if (isDataValid) {
 
